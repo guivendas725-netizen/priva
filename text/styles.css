@@ -608,8 +608,43 @@ h1, h2, h3 {
     width: min(100% - 1rem, 100%);
   }
 
+  .hero-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
   .hero-actions {
     flex-direction: column;
+  }
+
+  .hero-features {
+    padding-left: 1rem;
+    margin-top: 1rem;
+  }
+
+  .hero-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+  }
+
+  .hero-visual {
+    padding: 0.75rem;
+  }
+
+  .hero-accent-card {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.85rem;
+  }
+
+  .hero-accent-card img {
+    width: 3.6rem;
+    height: 3.6rem;
   }
 
   .stats-strip,
@@ -625,5 +660,37 @@ h1, h2, h3 {
 
   .btn {
     width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p,
+  .section-heading p,
+  .plan-card p,
+  .testimonial-card p,
+  .countdown-card p,
+  .guarantee-card p,
+  .final-cta p {
+    font-size: 0.98rem;
+  }
+
+  .hero-pill,
+  .btn,
+  .stat-card,
+  .plan-card,
+  .testimonial-card,
+  .countdown-card,
+  .guarantee-card,
+  .final-cta {
+    border-radius: 1.25rem;
+  }
+
+  .hero-actions,
+  .hero-features {
+    gap: 0.85rem;
   }
 }
